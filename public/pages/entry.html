@@ -1,0 +1,58 @@
+
+	<section  ng-controller="booksCtrl">
+
+<div class="jumbotron text-center">
+	<h1>{{entrytitle}}</h1>
+	<p>{{entrymessage}}</p>
+		Search: <input type="text" ng-model="search">
+
+</div>
+
+
+
+
+<form class="form-horizontal" role="form">
+  <div class="form-group">
+    <label for="name" class="col-sm-2 control-label">Subject</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="name" placeholder="Enter Your Name" ng-model="formInfo.name">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="movieid" class="col-sm-2 control-label">Memo</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="id" placeholder="Movie-ID" ng-model="formInfo.movieid">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="MovieTitle" class="col-sm-2 control-label">Description</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="movie" placeholder="Movie Title" ng-model="formInfo.movietitle">
+    </div>
+  </div>
+	<div class="form-group">
+		<label for="Comment" class="col-sm-2 control-label">Description</label>
+		<div class="col-sm-4">
+			<input type="text" class="form-control" id="comment" placeholder="Comment" ng-model="formInfo.comment">
+		</div>
+	</div>
+
+
+
+
+<!-- Submission Area -->
+	<div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" ng-click="saveData()" class="btn btn-success">Add Note</button>
+    </div>
+  </div>
+  <span>{{formInfo}}</span>
+</form>
+
+
+
+
+
+
+
+</section>
